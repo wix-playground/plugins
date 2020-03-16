@@ -1,18 +1,1 @@
-<plugin-repository>
-  <category name='Build'>
-    <idea-plugin>
-      <id>com.google.idea.bazel.ijwb</id>
-      <idea-version since-build='192.0' until-build='192.*' />
-      <name>Bazel (Wix Fork)</name>
-      <version>2192.12.0</version>
-      <download-url>https://github.com/wix-playground/intellij/releases/download/12.0/2192.12.0.zip</download-url>
-    </idea-plugin>
-    <idea-plugin>
-      <id>com.google.idea.bazel.ijwb</id>
-      <idea-version since-build='193.0' until-build='193.*' />
-      <name>Bazel (Wix Fork)</name>
-      <version>2193.12.0</version>
-      <download-url>https://github.com/wix-playground/intellij/releases/download/12.0/2193.12.0.zip</download-url>
-    </idea-plugin>
-  </category>
-</plugin-repository>
+<plugin-repository><Category name="Build"><idea-plugin><id>com.google.idea.bazel.ijwb</id><idea-version since-build="192.0" until-build="192.*" /><name>Bazel (Wix Fork)</name><version>2192.12.0</version><download-url>https://github.com/wix-playground/intellij/releases/download/12.0/2192.12.0.zip</download-url></idea-plugin><idea-plugin><id>com.google.idea.bazel.ijwb</id><idea-version since-build="193.0" until-build="193.*" /><name>Bazel (Wix Fork)</name><version>2193.12.0</version><download-url>https://github.com/wix-playground/intellij/releases/download/12.0/2193.12.0.zip</download-url></idea-plugin></Category></plugin-repository>
