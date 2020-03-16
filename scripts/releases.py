@@ -1,4 +1,3 @@
-import os
 from string import Template
 
 import requests
@@ -101,7 +100,7 @@ class Releases:
         return response.json()
 
     def has_asset_for_intellij(self, ij_version, rel):
-        asset_name = self._asset_version_for(ij_version, rel['tag_name'])
+        asset_name = self._asset_version_for(ij_version, rel['tag_name']) + '.zip'
         return asset_name in map(lambda asset: asset['name'], rel['assets'])
 
     def adjust_version_for_url(self, tag_version):
@@ -147,6 +146,3 @@ class Releases:
             for ij in self.ij_versions:
                 if not self.has_asset_for_intellij(ij, rel):
                     self.sync_artifactory_to_release(ij, rel)
-
-
-
