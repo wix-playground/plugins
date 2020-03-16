@@ -55,7 +55,7 @@ class Releases:
 
     def get_tags(self, limit=10):
         url = self._api_url("/repos/$owner/$repo/git/refs/tags")
-        response = requests.get(url, self._headers())
+        response = requests.get(url, headers=self._headers())
 
         # sort and filter
         version_tags = filter(self._release_number, response.json())
@@ -68,7 +68,7 @@ class Releases:
 
     def get_releases(self):
         url = self._api_url("/repos/$owner/$repo/releases")
-        return requests.get(url, self._headers()).json()
+        return requests.get(url, headers=self._headers()).json()
 
     def has_release(self, tag, releases):
         for release in releases:
